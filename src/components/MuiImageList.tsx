@@ -1,29 +1,33 @@
-import { ImageList, ImageListItem, Stack } from "@mui/material";
-import { Box } from "@mui/system";
+import {
+  ImageList,
+  ImageListItem,
+  ImageListItemBar,
+  Stack,
+} from "@mui/material";
 import React from "react";
 
 const MuiImageList = () => {
   return (
     <Stack spacing={4}>
-      <Box
+      <ImageList
         sx={{
           width: 500,
           height: 450,
-          overflowY: "scroll",
         }}
+        cols={3}
+        rowHeight={164}
       >
-        <ImageList variant="masonry" cols={3} gap={8}>
-          {itemData.map((item) => (
-            <ImageListItem key={item.img}>
-              <img
-                src={`${item.img}?w=248&fit=crop&auto=format&dpr=2`}
-                alt={item.title}
-                loading="lazy"
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
-      </Box>
+        {itemData.map((item) => (
+          <ImageListItem key={item.img}>
+            <img
+              src={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2`}
+              alt={item.title}
+              loading="lazy"
+            />
+            <ImageListItemBar title={item.title} />
+          </ImageListItem>
+        ))}
+      </ImageList>
     </Stack>
   );
 };
