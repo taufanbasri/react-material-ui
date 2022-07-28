@@ -1,12 +1,12 @@
 import "./App.css";
-import MuiBreadCrumbs from "./components/MuiBreadCrumbs";
+import MuiDrawer from "./components/MuiDrawer";
 import MuiNavbar from "./components/MuiNavbar";
 
 function App() {
   return (
     <div className="App">
       <MuiNavbar />
-      <MuiBreadCrumbs />
+      <MuiDrawer />
     </div>
   );
 }
