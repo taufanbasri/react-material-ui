@@ -1,16 +1,18 @@
 import { ImageList, ImageListItem, Stack } from "@mui/material";
+import { Box } from "@mui/system";
 import React from "react";
 
 const MuiImageList = () => {
   return (
     <Stack spacing={4}>
       <ImageList
+        variant="woven"
         sx={{
           width: 500,
           height: 450,
         }}
         cols={3}
-        rowHeight={164}
+        gap={8}
       >
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
