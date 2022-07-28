@@ -1,11 +1,10 @@
 import "./App.css";
-
-import MuiRadioButton from "./components/MuiRadioButton";
+import MuiCheckBox from "./components/MuiCheckBox";
 
 function App() {
   return (
     <div className="App">
-      <MuiRadioButton />
+      <MuiCheckBox />
     </div>
   );
 }
