@@ -1,13 +1,13 @@
 import "./App.css";
 import MuiBottomNavigation from "./components/MuiBottomNavigation";
-import MuiChip from "./components/MuiChip";
 import MuiNavbar from "./components/MuiNavbar";
+import MuiTooltip from "./components/MuiTooltip";
 
 function App() {
   return (
     <div className="App">
       <MuiNavbar />
-      <MuiChip />
+      <MuiTooltip />
       <MuiBottomNavigation />
     </div>
   );
