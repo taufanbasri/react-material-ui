@@ -1,13 +1,13 @@
 import "./App.css";
 
 import MuiNavbar from "./components/MuiNavbar";
-import MuiDialog from "./components/MuiDialog";
+import MuiProgress from "./components/MuiProgress";
 
 function App() {
   return (
     <div className="App">
       <MuiNavbar />
-      <MuiDialog />
+      <MuiProgress />
     </div>
   );
 }
